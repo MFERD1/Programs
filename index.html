@@ -267,19 +267,31 @@
             <p class="time-slot"><strong>Time Slot:</strong></p>
             <p class="time-slot">Your Time Slot</p>
         </div>
+
+        <div class="glass-panel" id="speakerInfo11">
+            <a href="https://tinyurl.com/MferdCentral" target="_blank" class="glass-button">Join</a>
+            <p class="meeting-name"><strong>North karnataka</strong></p>
+            <p class="speaker-name glowing"><strong>Speaker: Mufti Mohsin, Dr. Syed Misbahuddin</strong></p>
+            <p class="time-slot"><strong>Time Slot:</strong></p>
+            <p class="time-slot">5:50 AM - 6:30 AM</p>
+        </div>
+        
+
+
+        
     </div>
     
     <script>
         // Define speaker information and time slots
         function getCurrentDaySpeaker() {
-            const speakers = {   
-                Monday: ["Dr Mushtaq Ahmed", "Moulana Syed Shahid Ali Afsar,Mr. Abdullah Mubarak", "Moulana Khaleel ur Rahman,Mr. Qadir Maaz", "Moulana Ayub Ansaari,Dr. Fuzail Iyaz", "Moulana Moin Ahmed,Dr. Fuzail Iyaz", "Moulana Moin Ahmed,Mr. Sameer Panwala", "Mufti Mohsin,Dr. Syed Misbahuddin", "Qaadir Maaz"],
-                Tuesday: ["Dr Mushtaq Ahmed", "Moulana Syed Shahid Ali Afsar, Mr. Bilal", "Moulana Khaleel ur Rahman,Dr. Syed Burhan", "Moulana Ayub Ansaari,Aamir Hashmi", "Moulana Moin Ahmed,Mr. Ghufran Khan", "Moulana Dr Mushtaq Ahmed, Aamir Hashmi", "Mufti Mohsin,Mr. Qadir Maaz", "Qaadir Maaz"],
-                Wednesday: ["Dr Mushtaq Ahmed", "Moulana Syed Shahid Ali Afsar,Dr.  Mohammed Sajid Ali ", "Moulana Khaleel ur Rahman,Mr. Ghufran Khan", "Moulana Ayub Ansaari,Mr. Azhar Syyed", "Moulana Moin Ahmed,Dr. Mushtaq Ahmed", "Moulana Dr Mushtaq Ahmed,Mr. Sameer Panwala", "Mufti Mohsin,Dr. Fuzail Iyaz", "Qaadir Maaz"],
-                Thursday: ["Dr Mushtaq Ahmed", "Moulana Ahsan ul Haq,Dr.  Mohammed Sajid Ali", "Moulana Zia Ul Haq ,Moulana Imran", "Moulana Hazique Nadvi,MASHWARA", "Moulana Moin Ahmed,Mr. Aamir Hashmi", "Mr. Sameer Panwala,Moulana Dr Mushtaq Ahmed,", "Mufti Mohsin,Dr. Mushtaq Ahmed", "Qaadir Maaz"],
-                Friday: ["Dr Mushtaq Ahmed", "Moulana Ahsan ul Haq,Dr.  Mohammed Sajid Ali", "Moulana Zia Ul Haq , Mr. Mohd Younus", "Moulana Hazique Nadvi,Dr. Mushtaq Ahmed", "Moulana Moin Ahmed,Dr. Syed Burhan", "Moulana Dr Mushtaq Ahmed,Dr. Fuzail", "Mufti Mohsin,Mr. Gufran Khan", "Qaadir Maaz"],
-                Saturday: ["Dr Mushtaq Ahmed", "Ladies Program", "Moulana Zia Ul Haq, Ladies Program", "Moulana Hazique Nadvi,Dr. Syed Burhan", "Ladies Program", "Ladies Program", "Ladies Program", "Ladies Program"],
-                Sunday: [" ", "Speaker AR", "Qaadir Maaz ", "Speaker AT", "Speaker AU", "Speaker AV", "Speaker AW"]
+            const speakers = {   // dars            north                                                                   east                                                             wesrs                                                 south                                              central                               telangana                                       sunday parenting                            north karnata                                                    
+                Monday: ["Dr Mushtaq Ahmed",   "Moulana Khaleel ur Rahman,Mr. Qadir Maaz",                        "Moulana Ayub Ansaari,Dr. Fuzail Iyaz",                   "Moulana Moin Ahmed,Dr. Fuzail Iyaz",             "Moulana Dr Mushtaq Ahmed",                    "Mufti Mohsin,Dr. Syed Misbahuddin",       "Moulana Syed Shahid Ali Afsar,Mr. Abbas Junaidi ",              "Qaadir Maaz"   ,                    "Mufti Mouzam Sahab,Mr Saud" ,     "Moulana Shahul Hameed,Hafiz Thameem"        ],
+                Tuesday: ["Dr Mushtaq Ahmed",   "Moulana Khaleel ur Rahman Afsar, Dr. Syed Burhan",              "Moulana Ayub Ansaari,Mr. Mohammed Ismail",                  "Moulana Moin Ahmed,Mr. Ghufran Khan",             "Moulana Dr Mushtaq Ahmed",                    "Mufti Mohsin,Mr. Qadir Maaz",          "Moulana Syed Shahid Ali Afsar,Dr Syed Misbahuddin"   ,             "Qaadir Maaz"  ,                   "Mufti Mouzam Sahab,Mr Rizwan",    "Moulana,Hafiz Thameem"              ],
+                Wednesday: ["Dr Mushtaq Ahmed",   "Moulana Khaleel ur Rahman,Dr.  Mr. Ghufran Khan ",              "Moulana Ayub Ansaari,Mr. Azhar Syyed",                 "Moulana Moin Ahmed,Dr. Mushtaq Ahmed",               "Moulana Dr Mushtaq Ahmed,Mr. Sameer Panwala",   "Mufti Mohsin,Dr. Fuzail Iyaz",        "Moulana Syed Shahid Ali Afsar,Dr.  Mohammed Sajid Ali"   ,          "Qaadir Maaz"  ,                "Mufti Mouzam Sahab,Dr. Syed Burhan" ,   "Moulana,Mr Asif"     ],
+                Thursday: ["Dr Mushtaq Ahmed",   "Moulana Zia Ul Haq ,Moulana Imran",                              "Moulana Hazique Nadvi,MASHWARA",                             "Moulana Moin Ahmed,Mr. Mohd Younus",        "Moulana Dr Mushtaq Ahmed,Mr. Ghufran Khan",        "Mufti Mohsin,Dr. Mushtaq Ahmed",         "Moulana Ahsan ul Haq,Dr.  Mohammed Sajid Ali"  ,               "Qaadir Maaz"    ,               " Moulana Hazique Nadwi,Dr. Mushtaq Sahab" ,   "Moulana,Mr Salim"   ],
+                Friday: ["Dr Mushtaq Ahmed",   "Moulana Zia Ul Haq ,Mr. Mohd Younus",                            "Moulana Hazique Nadvi,Dr. Mushtaq Ahmed",                "Moulana Moin Ahmed,Dr. Syed Burhan",           "Moulana Dr Mushtaq Ahmed,Dr. Fuzail",                  "Mufti Mohsin,Mr. Gufran Khan",                 "Moulana Ahsan ul Haq,Mr. Osama"                  ,       "Qaadir Maaz"      ,                 "Mufti Mouzam Sahab,Mr. Ismail" ,      "Moulana,Mr Sultan T"         ],
+                Saturday: ["Dr Mushtaq Ahmed",   "Moulana Zia Ul Haq ,Ladies Program",                            "Moulana Hazique Nadvi,Dr. Syed Burhan",                  "Ladies Program",                                         "Ladies Program",                              "Ladies Program",                                                "Ladies Program"    ,                   "Ladies Program"   ,                         "Ladies Program"     ],
+                Sunday: [" ", "Speaker AR",       "Parenting Session",                                                     "Parenting Session",                                     "Parenting Session",                                "Parenting Session",                                     "Parenting Session",                             "Parenting Session",                                                                    ],
             };
 
             const daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
@@ -290,14 +302,16 @@
 
         function getTimeSlot(day) {
             const timeSlots = [
-                "6:30 PM - 7:10 PM",
+                "6:30 PM - 7:10 PM",  //  dar
+                "5:30 Am to 6:10 Am",  // north
+                "5:30 AM - 6:10 AM",   //
+                "6:15 Am to 6:55 Am",  //
+                "6:00 Am to 6:40 Am",  //
+                "6:10 Am to 6:50 Am",   //
+                "5:50 AM - 6:30 AM",   //
                 "6:00 AM - 6:40 AM",
-                "5:30 AM - 6:10 AM",
-                "5:00 AM - 5:40 AM",
-                "6:15 AM - 6:55 AM",
-                "6:00 AM - 6:40 AM",
-                "5:50 AM - 6:30 AM",
-                "6:00 AM - 6:40 AM",
+                "6:15 Am to 6:55 Am" ,
+                "6:20 Am to 7:00 Am"  //
             ];
 
             return timeSlots[day - 1];
@@ -312,7 +326,9 @@
                 "South Zone",
                 "Central Zone",
                 "Telangana Zone",
-                "Sunday Parenting Session" // Moved to the last position
+                "Sunday Parenting Session", 
+                 "North Karnataka",  
+                 "SOUTH (TN, Kerala)",    // Moved to the last position
             ];
 
             // Define join links for each time slot
@@ -324,10 +340,12 @@
                 "https://tinyurl.com/MferdWest",
                 "https://tinyurl.com/MferdSouth",
                 "https://tinyurl.com/MferdCentral",
-                "https://tinyurl.com/MferdTsAp"
+                "https://tinyurl.com/MferdTsAp",
+                "https://tinyurl.com/NorthKar",
+                "https://tinyurl.com/TNKer"
             ];
 
-            for (let i = 1; i <= 8; i++) {
+            for (let i = 1; i <= 12; i++) {
                 const speakers = getCurrentDaySpeaker();
                 const timeSlot = getTimeSlot(i);
 
